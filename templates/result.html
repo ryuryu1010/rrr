@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>結果表示</title>
+</head>
+<body>
+    <h1>検出されたテキスト</h1>
+    <p>{{ extracted_text }}</p>
+    <h2>アップロードされた画像</h2>
+    <img src="{{ image_url }}" alt="Uploaded Image">
+    <br>
+    <a href="{% url 'upload_image' %}">別の画像をアップロード</a>
+</body>
+</html>
